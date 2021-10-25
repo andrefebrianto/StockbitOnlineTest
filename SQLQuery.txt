@@ -1,0 +1,3 @@
+SELECT user.ID, user.UserName, parent.UserName AS 'ParentUserName'
+from user AS user
+left join user as parent on user.Parent = parent.ID
